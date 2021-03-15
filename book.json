@@ -1,0 +1,28 @@
+{
+    "gitbook": "3.x.x",
+    "pdf": {
+        "pageNumbers": true,
+        "fontFamily": "Arial",
+        "fontSize": 12,
+        "paperSize": "a4",
+        "margin": {
+            "right": 62,
+            "left": 62,
+            "top": 56,
+            "bottom": 56
+        }
+    },
+    "plugins":["expandable-chapters"],
+    "styles": {
+            "website": "styles/website.css"
+    },
+    "title": "AIBot",
+    "description": "AIBot Doc",
+    "author": "kevin",
+    "language": "zh-hans",
+    "root": ".",
+    "structure": {
+        "readme": "README.md"
+    }
+
+}
