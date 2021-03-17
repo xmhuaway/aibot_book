@@ -12,7 +12,7 @@
             "bottom": 56
         }
     },
-    "plugins":["expandable-chapters"],
+    "plugins":["chapter-fold"],
     "styles": {
             "website": "styles/website.css"
     },
