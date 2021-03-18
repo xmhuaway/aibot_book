@@ -2,6 +2,9 @@
 
 小车机械臂配合`PC`主机(ROS环境)一起使用
 
+## PC安装ROS
+
+[ros ubuntu安装](ros_install.md)
 
 
 ## 机械臂固件烧录

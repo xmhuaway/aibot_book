@@ -6,4 +6,7 @@
 * [ROS](ros/ros_readme.md)
     * [ROS安装](ros/ros_install.md)
     * [机械臂](ros/car_arm.md)
-    * [SLAM](ros/slam.md)
+    * [SLAM](README.md)
+        * [SLAM](ros/ros_slam_no_vm.md)
+        * [SLAM(虚拟机)](ros/slam.md)
+
