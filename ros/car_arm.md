@@ -11,6 +11,9 @@
 
 解压`myCobot固件烧录器V1.2.zip`包到任意磁盘，将`USB`连接到机械臂底部的`type-c`接口，点击 `myCobot.exe` 运行，烧录版本如下，点击`burn`烧录即可
 
+myCobot固件烧录器V1.2.zip  [windows下载](../source/myCobot固件烧录器V1.2.zip)
+
+
 ![base](../pic/base.png)
 
 
@@ -42,7 +45,7 @@ source ~/.bashrc
 
 
 
-从机`IP`设置，编辑`.bashrc`文件，在文件末尾添加以下内容
+从机`IP`设置(一般为小车)，编辑`.bashrc`文件，在文件末尾添加以下内容
 
 ```bash
 vim ~/.bashrc
@@ -66,6 +69,7 @@ source ~/.bashrc
 ```bash
 git clone https://github.com/kevin-zhuang/ros_arm_moveit
 ```
+或者从[这里](../source/ros_arm_moveit.zip)下载
 
 将下载的ROS包放在工作空间，编译。
 
