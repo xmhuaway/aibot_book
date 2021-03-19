@@ -16,7 +16,7 @@
 
 * [SLAM](ros/slam.md)
 * [机械臂](ros/car_arm.md)
-* [摄像头识别]()
+* [摄像头识别](ros/ros_camera_ar.md)
 * [小车机械臂联动]()
 
 ## 其他设置

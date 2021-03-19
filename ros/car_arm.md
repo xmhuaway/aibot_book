@@ -54,7 +54,7 @@ roslaunch ros_arm_moveit mycobot_arm_moveit.launch
 
 ## 远程连接到小车
 
-主机再打开另一个终端，输入=以下命令，远程连接到小车
+主机再打开另一个终端，输入以下命令，远程连接到小车
 
 ```bash
 ssh ubuntu@小车ip
