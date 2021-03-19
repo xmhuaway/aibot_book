@@ -76,3 +76,63 @@ rosrun  map_server map_saver -f map_name
 
 
 如果出现无法建图或者导航,可能是时间同步问题，可以参照视频time.mp4做相应处理.
+
+
+## 导航
+
+将保存好的地图文件，放入`ros`工程下的`map`文件夹下
+
+![office_map](../pic/office_map.png)
+
+修改`launch/navigation`文件内的参数
+
+![navigation_launch](../pic/navigation_launch.png)
+
+
+找到该行
+
+```xml
+    <arg name="map_file" default="$(find navigation_demo)/maps/xxx.yaml"/>
+```
+
+修改地图文件信息
+
+```xml
+    <arg name="map_file" default="$(find navigation_demo)/maps/office.yaml"/>
+```
+
+保存文件
+
+
+主机打开另一个终端,输入以下命令,启动导航节点
+
+```bash
+roslaunch navigation_demo navigation.launch
+```
+
+主机打开终端,使用SSH连接到小车
+
+```bash
+ssh pi@小车IP
+```
+
+输入密码 xmhw2015,连接成功后,输入以下命令启动小车节点
+
+```bash
+roslaunch linorobot start.launch
+```
+
+启动完成后如图所示
+![navigation](../pic/navigation.png)
+
+点击选择导航按钮
+![navigation_button](../pic/navigation_button.png)
+
+在地图上选择导航目标点，按住鼠标左键不放，移动鼠标确定方向
+![navigation_tar](../pic/navigation_tar.jpeg)
+
+放开鼠标后，小车开始导航
+![navigation_move](../pic/navigation_move.png)
+
+当出现`goal reached`时，说明导航结束，小车已经到达目标点
+![navigation_finish](../pic/navigation_finish.png)
