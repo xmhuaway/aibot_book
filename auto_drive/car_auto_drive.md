@@ -58,6 +58,7 @@ source ~/.bashrc
 ```bash
 roslaunch linorobt donkeycar.launch
 ```
+>退出同时按住ctrl和c
 
 
 
@@ -66,6 +67,7 @@ roslaunch linorobt donkeycar.launch
 开启另一个终端，输入以下命令切换到无人驾驶软件环境
 
 ```bash
+ssh pi@192.168.30.1
 source ~/env/bin/activate
 ```
 
@@ -101,7 +103,7 @@ http://192.168.30.1:8887
 行走训练完成后，将小车内的数据（`~/mycar/data/tub-xxx-xxx`）传输到PC主机上，到PC主机上donkeycar安装路径下，打开命令行，输入以下命令开始训练模型
 
 ```bash
-scp pi@192.168.30.1:/home/pi/mycar/data/tub-xxx-xxx .
+scp -r pi@192.168.30.1:/home/pi/mycar/data/tub-xxx-xxx .
 python train --tub tub-xxx-xxx --model ./models/mypilot.h5
 ```
 
@@ -123,9 +125,10 @@ scp mypilot.h5 pi@192.168.30.1:/home/pi/mycar/model
 
 ## 开启自动驾驶模式
 
-导入模型后，开启小车自动驾驶，输入以下命令
+导入模型后，开启小车自动驾驶，打开终端，输入以下命令
 
 ```bash
+ssh pi@192.168.30.1
 python manage.py drive --model ~/mycar/models/mypilot.h5
 ```
 
@@ -136,3 +139,5 @@ http://192.168.30.1:8887
 ```
 
 在控制界面上，`Mode & Pilot`选择`Local Pilot(d)`即可开始自动驾驶
+
+![auto_drive](../pic/auto_drive.png)

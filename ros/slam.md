@@ -30,7 +30,7 @@ ssh pi@小车IP
 输入密码 xmhw2015,连接成功后,输入以下命令启动小车节点
 
 ```bash
-roslaunch linorobot start.launch
+roslaunch linorobot car_slam.launch
 ```
 
 主机打开另一个终端,输入以下命令,启动建图节点
@@ -104,12 +104,6 @@ rosrun  map_server map_saver -f map_name
 保存文件
 
 
-主机打开另一个终端,输入以下命令,启动导航节点
-
-```bash
-roslaunch navigation_demo navigation.launch
-```
-
 主机打开终端,使用SSH连接到小车
 
 ```bash
@@ -119,7 +113,13 @@ ssh pi@小车IP
 输入密码 xmhw2015,连接成功后,输入以下命令启动小车节点
 
 ```bash
-roslaunch linorobot start.launch
+roslaunch linorobot car_slam.launch
+```
+
+主机打开另一个终端,输入以下命令,启动导航节点
+
+```bash
+roslaunch navigation_demo navigation.launch
 ```
 
 启动完成后如图所示
