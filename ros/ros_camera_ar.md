@@ -1,5 +1,32 @@
 # 摄像头识别
 
+## 摄像头标签
+
+摄像头标签识别图片可到 http://wiki.ros.org/ar_track_alvar 下载
+
+
+## 远程连接到小车底盘
+主机打开终端，输入以下命令，远程连接到小车底盘并启动`roscore`
+
+```bash
+ssh pi@小车ip
+roscore
+```
+密码为`aibot1234`
+
+
+## 远程连接机械臂
+
+主机打开终端，输入以下命令，远程连接到小车机械臂并启动摄像头识别节点
+
+```bash
+ssh ubuntu@小车机械臂ip
+roslaunch arm_navigation aibot_arm_cam.launch 
+
+```
+密码为`aibot1234`
+
+
 ## 启动主机节点
 
 主机打开终端，输入以下命令,打开可视化识别
@@ -8,21 +35,6 @@
 roslaunch arm_navigation camera_ar.launch
 ```
 
-## 远程连接小车
-
-主机再打开另一个终端，输入以下命令，远程连接到小车
-
-```bash
-ssh ubuntu@小车ip
-```
-
-密码为`xmhw2015`
-
-连接小车后启动摄像头识别节点
-
-```bash
-roslaunch arm_navigation aibot_arm_cam.launch 
-```
 
 ## 放置标签
 

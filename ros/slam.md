@@ -1,6 +1,5 @@
 # 小车SLAM流程
 
-
 ## 检查是否连接到小车
 
 主机打开终端,在终端中使用`ping`命令查看连接,输入以下命令并回车
@@ -21,13 +20,13 @@ ping 小车IP
 
 ## 建图
 
-主机打开终端,使用SSH连接到小车
+主机打开终端,使用SSH连接到 **小车底盘**
 
 ```bash
 ssh pi@小车IP
 ```
 
-输入密码 xmhw2015,连接成功后,输入以下命令启动小车节点
+输入密码 aibot1234,连接成功后,输入以下命令启动小车节点
 
 ```bash
 roslaunch linorobot car_slam.launch
@@ -104,13 +103,13 @@ rosrun  map_server map_saver -f map_name
 保存文件
 
 
-主机打开终端,使用SSH连接到小车
+主机打开终端,使用SSH连接到小车底盘
 
 ```bash
 ssh pi@小车IP
 ```
 
-输入密码 xmhw2015,连接成功后,输入以下命令启动小车节点
+输入密码 aibot1234,连接成功后,输入以下命令启动小车节点
 
 ```bash
 roslaunch linorobot car_slam.launch

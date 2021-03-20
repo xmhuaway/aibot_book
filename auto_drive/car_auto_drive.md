@@ -12,7 +12,7 @@ Mac <http://docs.donkeycar.com/guide/host_pc/setup_mac>
 
 
 ## PC主机连接到小车热点
-小车开机后，会生成一个AP，名称为`AIBot_xxx`，PC主机`wifi`连接到该AP,密码为12345678
+小车开机后，会生成一个AP，名称为`AIBot_base_xxxx`，PC主机`wifi`连接到该AP,密码为12345678
 
 
 ## 远程连接到小车
@@ -23,7 +23,7 @@ Mac <http://docs.donkeycar.com/guide/host_pc/setup_mac>
 ssh pi@192.168.30.1
 ```
 
-密码为 `xmhw2015`
+密码为 `aibot1234`
 
 
 

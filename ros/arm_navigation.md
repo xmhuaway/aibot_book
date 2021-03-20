@@ -11,13 +11,6 @@
 * 放下目标
 
 
-## 启动主机示例节点
-
-主机打开终端，输入以下命令启动示例节点
-```bash
-roslaunch arm_navigation aibot_arm_navigation_no_cam.launch
-```
-
 ## 启动小车底盘
 
 主机打开终端，输入以下命令连接小车并启动小车底盘
@@ -29,7 +22,7 @@ roslaunch linorobot car_start.launch
 
 ## 启动小车摄像头识别和机械臂控制
 
-主机打开终端，输入以下命令连接小车并启动摄像头识别和机械臂控制
+主机打开终端，输入以下命令连接小车机械臂并启动摄像头识别和机械臂控制
 
 ```bash
 ssh ubuntu@小车IP
@@ -37,6 +30,12 @@ roslaunch ros_arm_moveit arm_start.launch
 ```
 
 
+## 启动主机示例节点
+
+主机打开终端，输入以下命令启动示例节点
+```bash
+roslaunch arm_navigation aibot_arm_navigation_no_cam.launch
+```
 
 
 ## 运行示例代码

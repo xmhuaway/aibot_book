@@ -61,7 +61,9 @@ sudo apt-get install ros-kinetic-desktop-full
 sudo rosdep init
 rosdep update
 ```
-> 如果初始化失败，设置VPN重新初始化或者直接跳过该步骤
+
+> <font color=#FF000 >如果初始化失败，设置VPN重新初始化或者直接跳过该步骤</font>
+
 
 ## 环境配置
 
@@ -87,3 +89,42 @@ roscore
 如图所示，出现以下信息即安装成功
 
 ![roscore](../pic/roscore.png)
+
+
+## 新建ROS工作空间
+
+主机打开终端，输入以下命令新建ROS工作空间
+
+```bash
+mkdir -p catkin_ws/src
+```
+
+## 依赖安装
+
+主机打开终端,在终端中输入以下命令安装依赖包
+```bash
+sudo apt-get install ros-kinetic-joint-state-controller ros-kinetic-joint-trajectory-controller ros-kinetic-controller-manager ros-kinetic-position-controllers ros-kinetic-moveit ros-kinetic-moveit-ros-move-group ros-kinetic-moveit-ros ros-kinetic-trac-ik-lib ros-kinetic-navigation ros-kinetic-gmapping ros-kinetic-teleop-twist-keyboard
+```
+
+## 安装小车ROS依赖包
+
+创建好工作空间文件夹后，输入以下命令下载ROS包
+
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/kevin-zhuang/ros_arm_moveit
+```
+
+或者从[这里](../source/ros_arm_moveit.zip)下载
+
+将下载的ROS包放在工作空间，输入以下命令编译
+
+```bash
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
+```
+
+
+
+
