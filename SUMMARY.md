@@ -10,6 +10,8 @@
     * [虚拟机镜像包配置](ros/vm_install.md)
     * [ROS 安装](ros/ros_install.md)
     * [主从设置](ros/ros_master_ip.md)
+    * [时间同步](ros/ros_time.md)
+    
 * [SLAM](ros/slam.md)
 * [机械臂](ros/car_arm.md)
 * [摄像头识别](ros/ros_camera_ar.md)
