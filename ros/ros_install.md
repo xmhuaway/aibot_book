@@ -1,9 +1,9 @@
 # ROS环境安装
 
-建议`ros`安装使用`ubuntu`系统
+* 系统：Ubuntu 16.04.5 LTS
+* ROS：Kinetic Kame
 
-* Ubuntu版本 16.04.5 LTS
-* ROS版本 Kinetic Kame
+[ros官网安装](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 ## Ubuntu更换国内源
 
