@@ -99,13 +99,6 @@ roscore
 mkdir -p catkin_ws/src
 ```
 
-## 依赖安装
-
-主机打开终端,在终端中输入以下命令安装依赖包
-```bash
-sudo apt-get install ros-kinetic-joint-state-controller ros-kinetic-joint-trajectory-controller ros-kinetic-controller-manager ros-kinetic-position-controllers ros-kinetic-moveit ros-kinetic-moveit-ros-move-group ros-kinetic-moveit-ros ros-kinetic-trac-ik-lib ros-kinetic-navigation ros-kinetic-gmapping ros-kinetic-teleop-twist-keyboard
-```
-
 ## 安装小车ROS依赖包
 
 创建好工作空间文件夹后，输入以下命令下载ROS包
@@ -125,6 +118,11 @@ catkin_make
 source devel/setup.bash
 ```
 
+## 小车其他依赖安装
 
+主机打开终端,在终端中输入以下命令安装依赖包
+```bash
+sudo apt-get install ros-kinetic-joint-state-controller ros-kinetic-joint-trajectory-controller ros-kinetic-controller-manager ros-kinetic-position-controllers ros-kinetic-moveit ros-kinetic-moveit-ros-move-group ros-kinetic-moveit-ros ros-kinetic-trac-ik-lib ros-kinetic-navigation ros-kinetic-gmapping ros-kinetic-teleop-twist-keyboard
+```
 
 

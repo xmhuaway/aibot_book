@@ -22,9 +22,13 @@ allow 小车IP/24
 
 ## 小车时间同步
 
-远程连接到小车
+远程连接到小车(底盘/机械臂)
 ```bash
 ssh pi@小车IP
+```
+或者
+```bash
+ssh ubuntu@小车IP
 ```
 
 编辑`chrony.conf`文件，找到server关键字，修改成以下内容，如果没有，就手动添加

@@ -17,7 +17,7 @@ Mac <http://docs.donkeycar.com/guide/host_pc/setup_mac>
 
 ## 远程连接到小车
 
-开启终端输入以下命令，远程连接到小车
+开启终端输入以下命令，远程连接到**小车底盘**
 
 ```bash
 ssh pi@192.168.30.1
@@ -115,7 +115,7 @@ python train --tub tub-xxx-xxx --model ./models/mypilot.h5
 
 ## 导入模型
 
-PC主机训练好模型后，导入到小车（`~/mycar/model`）
+PC主机训练好模型后，导入到**小车地盘**（`~/mycar/model`）
 
 ```bash
 scp mypilot.h5 pi@192.168.30.1:/home/pi/mycar/model

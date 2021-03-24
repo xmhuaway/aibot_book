@@ -74,7 +74,7 @@ rosrun  map_server map_saver -f map_name
 ![map](../pic/map.png)
 
 
-如果出现无法建图或者导航,可能是时间同步问题，可以参照视频time.mp4做相应处理.
+如果出现无法建图或者导航,可能是时间同步问题，可以参照[时间同步](ros_time.md)做相应处理.
 
 
 ## 导航
@@ -103,7 +103,7 @@ rosrun  map_server map_saver -f map_name
 保存文件
 
 
-主机打开终端,使用SSH连接到小车底盘
+主机打开终端,使用SSH连接到**小车底盘**
 
 ```bash
 ssh pi@小车IP
