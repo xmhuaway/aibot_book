@@ -5,6 +5,11 @@
 
 解压`myCobot固件烧录器V1.2.zip`包到任意磁盘，将`USB`连接到机械臂底部的`type-c`接口，点击 `myCobot.exe` 运行，烧录版本如下，点击`burn`烧录即可
 
+固件版本说明
+
+* Basic Transponder
+* Atom Atom2.1alpha
+
 myCobot固件烧录器V1.2.zip  [windows下载](../source/myCobot固件烧录器V1.2.zip)
 
 ![base](../pic/base.png)

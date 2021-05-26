@@ -18,7 +18,7 @@ sudo vim /etc/chrony/chrony.conf
 allow 小车IP/24 
 ```
 
-添加完成后保存退出
+添加完成后保存退出，重启小车
 
 ## 小车时间同步
 
@@ -28,7 +28,7 @@ ssh pi@小车IP
 ```
 或者
 ```bash
-ssh ubuntu@小车IP
+ssh ubuntu@小车机械臂IP
 ```
 
 编辑`chrony.conf`文件，找到server关键字，修改成以下内容，如果没有，就手动添加
@@ -37,7 +37,7 @@ ssh ubuntu@小车IP
 server 主机IP
 ```
 
-添加完成后，保存退出
+添加完成后，保存退出，重启主机
 
 使用`ntpdate`命令同步主机时间
 

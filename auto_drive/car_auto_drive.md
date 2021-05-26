@@ -12,7 +12,7 @@ Mac <http://docs.donkeycar.com/guide/host_pc/setup_mac>
 
 
 ## PC主机连接到小车热点
-小车开机后，会生成一个AP，名称为`AIBot_base_xxxx`，PC主机`wifi`连接到该AP,密码为12345678
+小车开机后，会生成一个AP，名称为`AIBot_A1`，PC主机`wifi`连接到该AP,密码为aibot1234
 
 
 ## 远程连接到小车
@@ -56,7 +56,7 @@ source ~/.bashrc
 连接到小车后，输入以下命令启动`ros`节点
 
 ```bash
-roslaunch linorobt donkeycar.launch
+roslaunch aibot_hw aibot_donkey.launch
 ```
 >退出同时按住ctrl和c
 
@@ -68,7 +68,7 @@ roslaunch linorobt donkeycar.launch
 
 ```bash
 ssh pi@192.168.30.1
-source ~/env/bin/activate
+source ~/py37env/bin/activate
 ```
 
 
@@ -78,7 +78,7 @@ source ~/env/bin/activate
 进入到`mycar`文件夹并启动小车无人驾驶训练
 
 ```bash
-cd ~/mycar
+cd ~/Document/aibot_donkey
 python manage.py drive
 ```
 
